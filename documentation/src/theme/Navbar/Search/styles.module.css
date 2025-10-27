@@ -1,0 +1,100 @@
+/*
+Workaround to avoid rendering empty search container
+See https://github.com/facebook/docusaurus/pull/9385
+*/
+.navbarSearchContainer:empty {
+  display: none;
+}
+
+@media (max-width: 996px) {
+  .navbarSearchContainer {
+    position: absolute;
+    right: var(--ifm-navbar-padding-horizontal);
+  }
+}
+
+@media (min-width: 997px) {
+  .navbarSearchContainer {
+    padding: 0 var(--ifm-navbar-item-padding-horizontal);
+  }
+}
+
+:global([id^=orama-ui-theme].dark [id^=orama-ui]) {
+  --text-color-primary: #fbfbfb;
+  --text-color-secondary: #dadada;
+  --text-color-tertiary: #838289;
+  --text-color-accent: #ae8ff7;
+  --text-color-inactive: #99989d;
+  --text-color-reverse: #000;
+  --background-color-primary: #050505;
+  --background-color-secondary: #151515;
+  --background-color-tertiary: #212121;
+  --background-color-fourth: #2e2e2e;
+  --background-color-reverse: #fff;
+  --background-color-accent: #8152ee;
+  --border-color-primary: #2e2e2e;
+  --border-color-secondary: #151515;
+  --border-color-tertiary: #afafb1;
+  --border-color-accent: #8152ee;
+  --icon-color-primary: #fbfbfb;
+  --icon-color-secondary: #dadada;
+  --icon-color-tertiary: #838289;
+  --icon-color-inactive: #99989d;
+  --icon-color-reverse: #050505;
+  --shadow-color-primary: #000;
+  --button-text-color-primary: #fbfbfb;
+  --button-text-color-secondary: #99989d;
+  --button-background-color-primary: #8152ee;
+  --button-background-color-secondary: #151515;
+  --button-background-color-secondary-hover: #212121;
+  --button-border-color-secondary: #2e2e2e;
+  --backdrop-background-color-primary: rgba(5, 5, 5, .7);
+  --chat-button-border-color-gradientOne: transparent;
+  --chat-button-border-color-gradientTwo: transparent;
+  --chat-button-border-color-gradientThree: #8152ee;
+  --chat-button-border-color-gradientFour: #8152ee;
+  --chat-button-border-color-gradientFive: transparent;
+  --chat-button-border-color-gradientSix: transparent;
+  --chat-button-background-color-gradientOne: #8152ee;
+  --chat-button-background-color-gradientTwo: transparent;
+}
+
+:global([id^=orama-ui-theme].light [id^=orama-ui]) {
+  --text-color-primary: #151515;
+  --text-color-secondary: #838289;
+  --text-color-tertiary: #99989d;
+  --text-color-accent: #ae8ff7;
+  --text-color-inactive: #99989d;
+  --text-color-reverse: #fff;
+  --background-color-primary: #fbfbfb;
+  --background-color-secondary: #fff;
+  --background-color-tertiary: #eee9f6;
+  --background-color-fourth: #efefef;
+  --background-color-reverse: #000;
+  --background-color-accent: #432d77;
+  --border-color-primary: #dadada;
+  --border-color-secondary: #efefef;
+  --border-color-tertiary: #151515;
+  --border-color-accent: #432d77;
+  --icon-color-primary: #151515;
+  --icon-color-secondary: #dadada;
+  --icon-color-tertiary: #838289;
+  --icon-color-inactive: #99989d;
+  --icon-color-reverse: #fbfbfb;
+  --shadow-color-primary: #fff;
+  --button-text-color-primary: #fbfbfb;
+  --button-text-color-secondary: #838289;
+  --button-background-color-primary: #432d77;
+  --button-background-color-secondary: #fff;
+  --button-background-color-secondary-hover: #eee9f6;
+  --button-border-color-secondary: #dadada;
+  --backdrop-background-color-primary: hsla(0, 0%, 98%, .7);
+  --chat-button-border-color-gradientOne: transparent;
+  --chat-button-border-color-gradientTwo: transparent;
+  --chat-button-border-color-gradientThree: #432d77;
+  --chat-button-border-color-gradientFour: #432d77;
+  --chat-button-border-color-gradientFive: transparent;
+  --chat-button-border-color-gradientSix: transparent;
+  --chat-button-background-color-gradientOne: #432d77;
+  --chat-button-background-color-gradientTwo: transparent;
+}
